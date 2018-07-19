@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - mvn clean 
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - mvn package
+      - mv target/forex-service-1.0.0-BUILD-SNAPSHOT.jar forex-service-1.0.0-BUILD-SNAPSHOT.jar
+artifacts:
+   files:
+      - forex-service-1.0.0-BUILD-SNAPSHOT.war
