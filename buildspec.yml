@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
-      - mv target/forex-service-1.0.0-BUILD-SNAPSHOT.jar forex-service-1.0.0-BUILD-SNAPSHOT.jar
+      - mv target/forex-service-0.0.1-SNAPSHOT.jar forex-service-0.0.1-SNAPSHOT.jar
 artifacts:
    files:
-      - forex-service-1.0.0-BUILD-SNAPSHOT.war
+      - forex-service-0.0.1-SNAPSHOT.jar
